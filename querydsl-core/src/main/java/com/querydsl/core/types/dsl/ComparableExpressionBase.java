@@ -129,6 +129,18 @@ public abstract class ComparableExpressionBase<T extends Comparable> extends Sim
     }
 
     /**
+     * Create a {@code greatest(this, other)} expression
+     *
+     * <p>Get the greater value between two expressions</p>
+     *
+     * @param other
+     * @return greatest(this, other)
+     */
+    public ComparableExpressionBase<T> greatest(Expression<T> other) {
+        return Expressions.comparableOperation(getType(), Ops.GREATEST, mixin);
+    }
+
+    /**
      * Create an OrderSpecifier for descending order of this expression
      *
      * @return descending order by this

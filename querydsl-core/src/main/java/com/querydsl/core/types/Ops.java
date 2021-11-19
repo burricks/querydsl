@@ -68,6 +68,7 @@ public enum Ops implements Operator {
     GT(Boolean.class),
     LOE(Boolean.class),
     LT(Boolean.class),
+    GREATEST(Object.class),
 
     // Number
     NEGATE(Number.class),
@@ -135,7 +136,7 @@ public enum Ops implements Operator {
 
     public static final Set<Ops> notEqualsOps = Collections.unmodifiableSet(EnumSet.of(NE));
 
-    public static final Set<Ops> compareOps = Collections.unmodifiableSet(EnumSet.of(EQ, NE, LT, GT, GOE, LOE));
+    public static final Set<Ops> compareOps = Collections.unmodifiableSet(EnumSet.of(EQ, NE, LT, GT, GOE, LOE, GREATEST));
 
     public static final Set<Ops.AggOps> aggOps = Collections.unmodifiableSet(EnumSet.of(
             Ops.AggOps.AVG_AGG,

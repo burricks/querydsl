@@ -467,4 +467,15 @@ public abstract class ComparableExpression<T extends Comparable> extends Compara
         return coalesce.getValue();
     }
 
+    /**
+     * Create a {@code greatest(this, other)} expression
+     *
+     * @param other 
+     * @return greatest(this, other)
+     */
+    @Override
+    public ComparableExpression<T> greatest(Expression<T> other) {
+        return Expressions.comparableOperation(getType(), Ops.GREATEST, mixin);
+    }
+
 }
