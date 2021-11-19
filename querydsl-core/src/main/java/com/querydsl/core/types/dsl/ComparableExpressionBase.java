@@ -137,7 +137,7 @@ public abstract class ComparableExpressionBase<T extends Comparable> extends Sim
      * @return greatest(this, other)
      */
     public ComparableExpressionBase<T> greatest(Expression<T> other) {
-        return Expressions.comparableOperation(getType(), Ops.GREATEST, mixin);
+        return Expressions.comparableOperation(getType(), Ops.GREATEST, mixin, other);
     }
 
     /**
