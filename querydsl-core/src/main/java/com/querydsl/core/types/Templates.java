@@ -101,7 +101,7 @@ public class Templates {
         add(Ops.GT, "{0} > {1}", Precedence.COMPARISON);
         add(Ops.LOE, "{0} <= {1}", Precedence.COMPARISON);
         add(Ops.LT, "{0} < {1}", Precedence.COMPARISON);
-        add(Ops.GREATEST, "greatest({0}, {1})", Precedence.COMPARISON);
+        add(Ops.GREATEST, "greatest({0},{1})", Precedence.COMPARISON);
 
         // numeric
         add(Ops.NEGATE, "-{0}", Precedence.NEGATE);

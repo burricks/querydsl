@@ -84,6 +84,7 @@ public class ProjectionsFactory {
         if (module != QuerydslModule.COLLECTIONS && module != QuerydslModule.RDFBEAN) {
             rv.add(expr.min());
             rv.add(expr.max());
+            rv.add(expr.greatest(other));
         }
 
         return Collections.unmodifiableSet(rv);

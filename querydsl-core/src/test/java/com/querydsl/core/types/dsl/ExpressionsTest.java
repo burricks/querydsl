@@ -276,6 +276,11 @@ public class ExpressionsTest {
     }
 
     @Test
+    public void comparableOperation2() {
+        assertEquals("greatest(a,b)", Expressions.comparableOperation(Boolean.class, Ops.GREATEST, a, b).toString());
+    }
+
+    @Test
     public void dateOperation() {
         assertEquals("current_date()",
                 Expressions.dateOperation(Date.class, Ops.DateTimeOps.CURRENT_DATE).toString());

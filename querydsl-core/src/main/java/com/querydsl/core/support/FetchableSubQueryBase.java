@@ -111,8 +111,18 @@ public abstract class FetchableSubQueryBase<T, Q extends FetchableSubQueryBase<T
     }
 
     @Override
+    public BooleanExpression greatest(Expression<? extends T> expr) {
+        return Expressions.predicate(Ops.GREATEST, this, expr);
+    }
+
+    @Override
     public BooleanExpression loe(T constant) {
         return loe(Expressions.constant(constant));
+    }
+
+    @Override
+    public BooleanExpression greatest(T constant) {
+        return greatest(Expressions.constant(constant));
     }
 
     @Override

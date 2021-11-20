@@ -139,6 +139,22 @@ public interface ExtendedSubQuery<T> extends SubQueryExpression<T> {
     BooleanExpression loe(T constant);
 
     /**
+     * Create a {@code this <= right} expression
+     *
+     * @param expr rhs of the comparison
+     * @return this &lt;= right
+     */
+    BooleanExpression greatest(Expression<? extends T> expr);
+
+    /**
+     * Create a {@code this <= right} expression
+     *
+     * @param constant rhs of the comparison
+     * @return this &lt;= right
+     */
+    BooleanExpression greatest(T constant);
+
+    /**
      * Create a {@code this >= right} expression
      *
      * @param expr rhs of the comparison
