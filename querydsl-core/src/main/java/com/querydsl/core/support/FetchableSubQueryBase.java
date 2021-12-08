@@ -110,12 +110,10 @@ public abstract class FetchableSubQueryBase<T, Q extends FetchableSubQueryBase<T
         return Expressions.predicate(Ops.LOE, this, expr);
     }
 
-
     @Override
     public BooleanExpression loe(T constant) {
         return loe(Expressions.constant(constant));
     }
-
 
     @Override
     public BooleanExpression goe(Expression<? extends T> expr) {

@@ -181,5 +181,5 @@ public interface ExtendedSubQuery<T> extends SubQueryExpression<T> {
      * @return this in (a, b, c)
      */
      BooleanExpression in(T... right);
-     
+
 }
