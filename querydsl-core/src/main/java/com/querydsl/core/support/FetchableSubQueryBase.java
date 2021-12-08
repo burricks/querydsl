@@ -20,9 +20,7 @@ import com.querydsl.core.QueryMetadata;
 import com.querydsl.core.types.*;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.core.types.dsl.BooleanOperation;
-//import com.querydsl.core.types.dsl.ComparableExpression;
 import com.querydsl.core.types.dsl.Expressions;
-//import com.querydsl.core.types.dsl.SimpleExpression;
 
 /**
  * {@code FetchableSubQueryBase} extends {@link com.querydsl.core.support.FetchableQueryBase} to provide fluent Expression creation functionality
@@ -112,20 +110,12 @@ public abstract class FetchableSubQueryBase<T, Q extends FetchableSubQueryBase<T
         return Expressions.predicate(Ops.LOE, this, expr);
     }
 
-    //@Override
-    //public SimpleExpression<T> greatest(Expression<? extends T> expr) {
-    //    return Expressions.operation(T.class, Ops.GREATEST, expr);
-    //}
 
     @Override
     public BooleanExpression loe(T constant) {
         return loe(Expressions.constant(constant));
     }
 
-    //@Override
-    //public ComparableExpression<T> greatest(T constant) {
-    //    return greatest(Expressions.constant(constant));
-    //}
 
     @Override
     public BooleanExpression goe(Expression<? extends T> expr) {
