@@ -143,7 +143,6 @@ public interface ExtendedSubQuery<T> extends SubQueryExpression<T> {
      *
      * @param expr opposing value in the comparison
      * @return this greatest(this, other)
-     */
     Comparable<T> greatest(Expression<? extends T> expr);
 
     /**
@@ -151,8 +150,8 @@ public interface ExtendedSubQuery<T> extends SubQueryExpression<T> {
      *
      * @param expr opposing value in the comparison
      * @return this greatest(this, other)
-     */
     Comparable<T> greatest(T constant);
+    **/
 
     /**
      * Create a {@code this >= right} expression
