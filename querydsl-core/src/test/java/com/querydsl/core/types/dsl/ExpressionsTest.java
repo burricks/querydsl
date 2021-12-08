@@ -276,8 +276,8 @@ public class ExpressionsTest {
     }
 
     @Test
-    public void comparableOperation2() {
-        assertEquals("greatest(a,b)", Expressions.comparableOperation(Boolean.class, Ops.GREATEST, a, b).toString());
+    public void dateComparableOperation() {
+        assertEquals("greatest(a,b)", Expressions.comparableOperation(Date.class, Ops.GREATEST, a, b).toString());
     }
 
     @Test
