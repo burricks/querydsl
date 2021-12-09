@@ -276,6 +276,7 @@ public class ExpressionsTest {
     }
 
     @Test
+    //CS 427 Issue: https://github.com/querydsl/querydsl/issues/2812
     public void dateComparableOperation() {
         assertEquals("greatest(a,b)", Expressions.comparableOperation(Date.class, Ops.GREATEST, a, b).toString());
     }
