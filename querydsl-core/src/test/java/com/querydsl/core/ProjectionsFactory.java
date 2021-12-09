@@ -62,7 +62,6 @@ public class ProjectionsFactory {
         rv.add(expr.year());
         rv.add(expr.yearMonth());
 
-
         if (module != QuerydslModule.COLLECTIONS && module != QuerydslModule.RDFBEAN) {
             rv.add(expr.min());
             rv.add(expr.max());
