@@ -62,6 +62,7 @@ public class ProjectionsFactory {
         rv.add(expr.year());
         rv.add(expr.yearMonth());
 
+
         if (module != QuerydslModule.COLLECTIONS && module != QuerydslModule.RDFBEAN) {
             rv.add(expr.min());
             rv.add(expr.max());
@@ -80,6 +81,7 @@ public class ProjectionsFactory {
         rv.add(expr.hour());
         rv.add(expr.minute());
         rv.add(expr.second());
+        rv.add(expr.greatest(other));
 
         if (module != QuerydslModule.COLLECTIONS && module != QuerydslModule.RDFBEAN) {
             rv.add(expr.min());
