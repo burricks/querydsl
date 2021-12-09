@@ -472,10 +472,10 @@ public abstract class ComparableExpression<T extends Comparable> extends Compara
      *
      * @param other 
      * @return greatest(this, other)
-     */
     @Override
     public ComparableExpression<T> greatest(Expression<T> other) {
         return Expressions.comparableOperation(getType(), Ops.GREATEST, mixin, other);
     }
+    */
 
 }

@@ -29,7 +29,7 @@ public class JavaTemplatesTest {
         int p1 = getPrecedence(Ops.NOT);
         int p2 = getPrecedence(Ops.MULT, Ops.DIV, Ops.MOD);
         int p3 = getPrecedence(Ops.ADD, Ops.SUB);
-        int p4 = getPrecedence(Ops.LT, Ops.GT, Ops.GOE, Ops.LOE, Ops.BETWEEN, Ops.INSTANCE_OF, Ops.GREATEST);
+        int p4 = getPrecedence(Ops.LT, Ops.GT, Ops.GOE, Ops.LOE, Ops.BETWEEN, Ops.INSTANCE_OF);
         int p5 = getPrecedence(Ops.EQ, Ops.NE);
         int p6 = getPrecedence(Ops.AND);
         int p7 = getPrecedence(Ops.OR);
