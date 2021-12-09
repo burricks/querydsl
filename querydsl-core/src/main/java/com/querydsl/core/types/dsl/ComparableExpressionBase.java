@@ -132,6 +132,8 @@ public abstract class ComparableExpressionBase<T extends Comparable> extends Sim
      * Create a {@code greatest(this, other)} expression
      *
      * <p>Get the greater value between two expressions</p>
+     * 
+     * //CS 427 Issue Link: https://github.com/querydsl/querydsl/issues/2812
      *
      * @param other
      * @return greatest(this, other)
